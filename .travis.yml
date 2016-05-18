@@ -7,4 +7,4 @@ services:
   - redis-server
 
 script:
-  - mvn clean test package
+  - mvn clean test package cobertura:cobertura coveralls:report

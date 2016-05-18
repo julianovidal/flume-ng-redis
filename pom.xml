@@ -11,6 +11,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.sourceVersion>1.8</project.build.sourceVersion>
 		<project.build.targetVersion>1.8</project.build.targetVersion>
+		<coveralls.version>4.1.0</coveralls.version>
 		<flume.version>1.6.0</flume.version>
 		<jedis.version>2.7.2</jedis.version>
 	</properties>
@@ -41,8 +42,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>buildnumber-maven-plugin</artifactId>
+				<groupId>org.eluder.coveralls</groupId>
+				<artifactId>coveralls-maven-plugin</artifactId>
+				<version>${coveralls.version}</version>
 			</plugin>
 		</plugins>
 	</build>
