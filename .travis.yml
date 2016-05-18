@@ -3,8 +3,5 @@ language: java
 jdk:
   - oraclejdk8
 
-services:
-  - redis-server
-
 script:
-  - mvn clean test package cobertura:cobertura coveralls:report
+  - mvn clean test package
