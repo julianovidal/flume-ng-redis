@@ -8,6 +8,7 @@ The latest build was created on top of Apache Flume v1.6.0
   
 ## Current Dependencies
 [Jedis](https://github.com/xetorthio/jedis) v2.7.2
+
 [Apache Commons Pool2](http://commons.apache.org/proper/commons-pool/) v2.3
 
 ## Building yourself
@@ -20,14 +21,17 @@ The latest build was created on top of Apache Flume v1.6.0
 
 ## How do I use it?
 You can download the latest build at: http://github.com/julianovidal/flume-ng-redis/releases
-Or build yourself
+
+or build yourself
 
 Add the libraries to Apache Flume plugin.d folder
  
 `cp target/flume-ng-redis-1.0.0.jar $FLUME_HOME/plugins.d/flume-ng-redis/lib/`
 
 Copy the Jedis library and the Commons Pool 2 library
+
 `cp ~/.m2/repository/redis/clients/jedis/2.7.2/jedis-2.7.2.jar $FLUME_HOME/plugins.d/flume-ng-redis/libext/`
+
 `cp ~/.m2/repository/org/apache/commons/commons-pool2/2.3/commons-pool2-2.3.jar $FLUME_HOME/plugins.d/flume-ng-redis/libext/`
 
 
